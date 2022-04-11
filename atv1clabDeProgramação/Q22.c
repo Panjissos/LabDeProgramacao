@@ -1,4 +1,4 @@
-/*A linguagem C pode representar letras mai ́usculas, letras min ́usculas e uma grande variedade de
+/*ATV22 A linguagem C pode representar letras mai ́usculas, letras min ́usculas e uma grande variedade de
 s ́ımbolos especiais. O C usa internamente pequenos inteiros para representar cada caractere diferente.
 
 O conjunto de caracteres que um computador utiliza e as representa ̧c ̃oes dos n ́umeros inteiros corres-

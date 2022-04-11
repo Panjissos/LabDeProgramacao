@@ -1,4 +1,4 @@
-/*Escreva um programa que solicite 3 n ́umeros em ponto flutuante e imprima a m ́edia aritm ́etica e
+/*ATV27 Escreva um programa que solicite 3 n ́umeros em ponto flutuante e imprima a m ́edia aritm ́etica e
 geom ́etrica. (Utilize a fun ̧c ̃ao pow(base, expoente) da biblioteca math.h).*/
 #include <stdio.h>
 #include <math.h>

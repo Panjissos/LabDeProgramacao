@@ -1,8 +1,8 @@
-/*Fazer um programa para ler as coordenadas x e y de dois pontos e calcular a distˆancia entre os dois
+/*ATV26 Fazer um programa para ler as coordenadas x e y de dois pontos e calcular a distˆancia entre os dois
 pontos no plano. (Utilize a fun ̧c ̃ao sqrt (numero), biblioteca math.h).*/
-
 #include <stdio.h>
 #include <math.h>
+
 void calculaDistanciaEntrePontos(float x1,float x2, float y1, float y2){
     float res=0;
     printf("%.02f", sqrt(((pow(x2 - x1,2)) + (pow(y2 - y1,2))))); 
