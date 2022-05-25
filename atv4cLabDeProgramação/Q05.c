@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 void tamanhoString(char *p){
     int i = 0;
     
-    while (*(p + i) != '\0') i++;
+    while (*(p + i) != '\0') i++;//p[0 + i] p[0 + 0] -> p[0 + i]
     // {
     //     aux = *(p + i); 
     //     i++;
