@@ -4,7 +4,7 @@
 #include <string.h>
 #define TAM 255
 
-void tamanhoString(char *);//protótipo da função
+void tamanhoString(char *);
 
 int main(int argc, char const *argv[])
 {
@@ -24,14 +24,11 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
-//a função
+
 void tamanhoString(char *p){
     int i = 0;
     
-    while (*(p + i) != '\0') i++;//p[0 + i] p[0 + 0] -> p[0 + i]
-    // {
-    //     aux = *(p + i); 
-    //     i++;
-    // }
+    while (*(p + i) != '\0') i++;
+
     printf("O tamanho da string eh: %d",i);
 }

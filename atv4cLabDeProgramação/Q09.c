@@ -1,4 +1,6 @@
-/*9. Implemente o m ́etodo de ordena ̧c ̃ao bolha utilizando ponteiros.*/
+/*9. Implemente o m ́etodo de ordena ̧c ̃ao bolha utilizando ponteiros.
+    implementei o cálculo da diagonal secundaria e principal
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -23,14 +25,23 @@ int main(int argc, char const *argv[])
     {
         *(p + i) = rand() % VAL;
     }
+    printf("Matriz sem ordenacao");
 
     imprimirMatriz(p);
 
-    //diagPrincipal(p, L, &r);
+    bubbleSort(p, L * C);
+
+    printf("Matriz com ordenacao");
+
+    imprimirMatriz(p);
+    
+    diagPrincipal(p, L, &r);
+
+    printf("A diagonal principal e: %d\n", r);
 
     diagSecundaria(p, L, &r);
 
-    printf("A dp e: %d", r);
+    printf("A diagonal secundaria e: %d\n", r);
 
     return 0;
 }
@@ -44,6 +55,7 @@ void imprimirMatriz(int *p)
             printf("\n");
         printf("%d ", *(p + i));
     }
+    printf("\n");
 }
 
 void bubbleSort(int *p, int dim)
@@ -65,17 +77,7 @@ void bubbleSort(int *p, int dim)
     }
 }
 
-void diagPrincipal1(int *p, int dim)
-{
 
-    int s = 0;
-
-    for (int i = 0; i < dim; i+= dim + 1)
-    {
-        s += *(p + i);
-        printf("Diagonal principal: %d\n", s);
-    }
-}
 
 void diagPrincipal(int *p, int dim, int *pr){
     int s = 0;
@@ -83,13 +85,13 @@ void diagPrincipal(int *p, int dim, int *pr){
         s += *(p+k);
     }
     *pr = s;
+
 }
 
 void diagSecundaria(int *p, int dim, int *pr){
     int s = 0;
     for (int k=(dim-1); k<(dim*dim) - 1; k+=(dim-1)){
         s += *(p+k);
-        printf(" elemento %d", s);
     }
     *pr = s;
 }
